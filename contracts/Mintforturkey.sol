@@ -54,8 +54,14 @@ uint256 public mintEndDate = 1676383200; // According to the tweet of Haluk Leve
 // NFT contract includes a function to change mintEndDate which can be used if the donation address will last longer
 
 
+// Donation address of "Ahbap" NGO 
 
-address constant donationAddress   = 0xB67705398fEd380a1CE02e77095fed64f8aCe463 ; // Donation address of "Ahbap" NGO for BSC network
+// Binance Smart Chain
+address constant donationAddress   = 0xB67705398fEd380a1CE02e77095fed64f8aCe463 ;
+// Ethereum
+// 0xe1935271D1993434A1a59fE08f24891Dc5F398Cd
+// Avax
+// 0x868D27c361682462536DfE361f2e20B3A6f4dDD8
 
 
 constructor () ERC721A( "MintForTurkey" , "TURKEY") { }
