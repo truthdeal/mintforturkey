@@ -50,7 +50,8 @@ bool    public isRevealed;
 
 string  public baseTokenUrl = "ipfs://mintforturkey/";
 string  public tokenUrlSuffix = ".json";
-uint256 public mintEndDate = 1676383200;
+uint256 public mintEndDate = 1676383200; // According to the tweet of Haluk Levent, after 1 week donation address will expire
+// NFT contract includes a function to change mintEndDate which can be used if the donation address will last longer
 
 
 
@@ -102,6 +103,10 @@ function setBaseTokenUrl(string memory _baseTokenUrl) public onlyOwner {
 
 function setTokenUrlSuffix(string memory _tokenUrlSuffix) public onlyOwner {
     tokenUrlSuffix = _tokenUrlSuffix;
+  }
+
+function setMintEndDate(uint256 _mintEndDate) public onlyOwner {
+    mintEndDate = _mintEndDate;
   }
 
 
