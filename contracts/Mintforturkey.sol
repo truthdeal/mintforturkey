@@ -44,11 +44,11 @@ contract MintForTurkey is ERC721A, Ownable {
 
 // Contract Variables
 
-uint256 public mintPrice = 0.001 ether ;
+uint256 public mintPrice = 0.55 ether ;
 bool    public saleStatus;
 bool    public isRevealed;
 
-string  public baseTokenUrl = "ipfs://mintforturkey/";
+string  public baseTokenUrl = "ipfs://QmWQ7Uzefu8AXxaPNDfUKm4rLLn7N5CLfzmwRXszZuCA9E/";
 string  public tokenUrlSuffix = ".json";
 uint256 public mintEndDate = 1676383200; // According to the tweet of Haluk Levent, after 1 week donation address will expire
 // NFT contract includes a function to change mintEndDate which can be used if the donation address will last longer
@@ -56,12 +56,12 @@ uint256 public mintEndDate = 1676383200; // According to the tweet of Haluk Leve
 
 // Donation address of "Ahbap" NGO 
 
-// Binance Smart Chain
-address constant donationAddress   = 0xB67705398fEd380a1CE02e77095fed64f8aCe463 ;
+// Avax
+address constant donationAddress   = 0x868D27c361682462536DfE361f2e20B3A6f4dDD8 ;
 // Ethereum
 // 0xe1935271D1993434A1a59fE08f24891Dc5F398Cd
-// Avax
-// 0x868D27c361682462536DfE361f2e20B3A6f4dDD8
+// Binance Smart Chain
+// 0xB67705398fEd380a1CE02e77095fed64f8aCe463
 
 
 constructor () ERC721A( "MintForTurkey" , "TURKEY") { }

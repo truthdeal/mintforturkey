@@ -1,6 +1,7 @@
 require('dotenv').config();
-const { API_URL, POLYGON_API_URL, ROPSTEN_API_URL , RINKEBY_API_URL , ETHERSCAN_API, PRIVATE_KEY } = process.env;
+const { API_URL, POLYGON_API_URL, ROPSTEN_API_URL , RINKEBY_API_URL , AVAX_API_URL , ETHERSCAN_API, PRIVATE_KEY } = process.env;
 require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-etherscan");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -35,6 +36,10 @@ module.exports = {
       },
       bsc: {
         url: `https://bsc-dataseed.binance.org/`,
+        accounts: [`0x${PRIVATE_KEY}`]
+       },
+       avax: {
+        url: AVAX_API_URL,
         accounts: [`0x${PRIVATE_KEY}`]
        },
     },
