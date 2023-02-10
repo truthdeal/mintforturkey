@@ -1,5 +1,5 @@
-//require('dotenv').config();
-//const { API_URL, POLYGON_API_URL, ROPSTEN_API_URL , RINKEBY_API_URL , ETHERSCAN_API, PRIVATE_KEY } = process.env;
+require('dotenv').config();
+const { API_URL, POLYGON_API_URL, ROPSTEN_API_URL , RINKEBY_API_URL , ETHERSCAN_API, PRIVATE_KEY } = process.env;
 require("@nomicfoundation/hardhat-toolbox");
 
 
